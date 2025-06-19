@@ -50,6 +50,15 @@ SELECT YEAR(hire_date) AS Year, MONTH(hire_date) AS Month, COUNT(*) AS Employees
 
 ---
 
+**RESULTS**
+     * Truck Drivers: 120 drivers employed, potential shortages during peak periods.
+     * Efficient Trucks: 85 out of 150 trucks are efficient, and 65 trucks are underperforming.
+     * Coverage Areas: Average distance of 250 km daily; some trucks cover 450 km.
+     * Truck Breakdowns: Average of 2.5 breakdowns per month; some trucks need urgent replacement.
+     * Employee Hiring: 40 new employees hired, 15 truck drivers in the past year.
+     * Hiring Trend: 15 truck drivers hired in the last quarter, indicating demand or turnover.
+     * Insight: Fleet and workforce optimization are needed for efficiency and cost reduction
+
 **RECOMMENDATIONS**
 Based on the Exploratory Data Analysis (EDA) and insights derived from the SQL queries, here are some recommendations to improve the efficiency and reliability of the oil transfer service:
 1. Optimize Workforce Allocation
@@ -63,11 +72,4 @@ Based on the Exploratory Data Analysis (EDA) and insights derived from the SQL q
    * Develop a preventive maintenance schedule to reduce breakdowns, including replacing parts before they fail.
    * Investigate leasing or acquiring newer, more efficient trucks if maintenance costs are too high for older ones.
   
-   **RESULTS**
-     * Truck Drivers: 120 drivers employed, potential shortages during peak periods.
-     * Efficient Trucks: 85 out of 150 trucks are efficient, and 65 trucks are underperforming.
-     * Coverage Areas: Average distance of 250 km daily; some trucks cover 450 km.
-     * Truck Breakdowns: Average of 2.5 breakdowns per month; some trucks need urgent replacement.
-     * Employee Hiring: 40 new employees hired, 15 truck drivers in the past year.
-     * Hiring Trend: 15 truck drivers hired in the last quarter, indicating demand or turnover.
-     * Insight: Fleet and workforce optimization are needed for efficiency and cost reduction.
+   
