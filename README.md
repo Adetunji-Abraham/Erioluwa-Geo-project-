@@ -1,9 +1,11 @@
 # Erioluwa Geo project 
 
 **PROJECT OVERVIEW** 
+
 Objective This project investigates the root causes of delays in the oil transfer process and proposes a strategic solution plan. Through data analysis of operational workflows, resource allocation, and process efficiency, this project seeks to identify trends and key areas for improvement.
 
 **Scope**
+
 The analysis covers:
 * Current transfer and handling protocols
 * Staffing and equipment utilization patterns
@@ -11,6 +13,7 @@ The analysis covers:
 * Operational bottlenecks and improvement opportunities
 
 **Methodology**
+
 * Data Collection: Gathering logs, staffing data, equipment status, and service records.
 * Analysis: Identifying delay trends and correlating them with operational factors.
 * Root Cause Analysis: Identifying the primary contributors to the delay.
@@ -18,12 +21,15 @@ The analysis covers:
 * Data Source Data set provided by the client as a CSV file, which was downloaded and processed for analysis.
 
 **Data Source** 
+
 Data set provided by the client as a CSV file, which was downloaded and processed for analysis
 
 **Tools**
+
 1. Microsoft Excel: Utilized for preliminary data correction and initial review of the dataset
    
 **EXPLORATORY DATA ANALYSIS (EDA)**
+
 In this EDA phase, we will examine the human resource dataset to address key operational questions that can impact the efficiency and reliability of oil transfer services. These insights will help identify potential areas for improvement and facilitate data-driven decision-making. Key Questions to Address:
 1. Total Number of Truck Drivers
      * Determine the number of truck drivers to assess if current staffing meets operational demands.
@@ -38,6 +44,7 @@ These insights from EDA will contribute to optimizing workforce planning, improv
 ---
 
 __SQL__
+
 '''SELECT COUNT(*) AS TotalTruckDrivers
 FROM employees
 WHERE job_title = 'Truck Driver';
@@ -51,6 +58,7 @@ SELECT YEAR(hire_date) AS Year, MONTH(hire_date) AS Month, COUNT(*) AS Employees
 ---
 
 **RESULTS**
+
      * Truck Drivers: 120 drivers employed, potential shortages during peak periods.
      * Efficient Trucks: 85 out of 150 trucks are efficient, and 65 trucks are underperforming.
      * Coverage Areas: Average distance of 250 km daily; some trucks cover 450 km.
@@ -60,6 +68,7 @@ SELECT YEAR(hire_date) AS Year, MONTH(hire_date) AS Month, COUNT(*) AS Employees
      * Insight: Fleet and workforce optimization are needed for efficiency and cost reduction
 
 **RECOMMENDATIONS**
+
 Based on the Exploratory Data Analysis (EDA) and insights derived from the SQL queries, here are some recommendations to improve the efficiency and reliability of the oil transfer service:
 1. Optimize Workforce Allocation
 *Recommendation*: Based on the total number of truck drivers, assess if the current workforce is sufficient to meet demand, especially during peak periods. If there are shortages, consider hiring additional drivers or redistributing work hours to avoid delays.
